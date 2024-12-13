@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.titleText {
+  @apply text-2xl font-medium sm:text-3xl sm:font-semibold text-blue-600;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.btn {
+  @apply px-8 py-2 sm:px-16 sm:py-3 rounded-full font-semibold border-2 border-blue-600;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.darkBtn {
+  @apply bg-blue-600 text-white;
+}
+
+.lightBtn {
+  @apply bg-white text-blue-600;
 }
